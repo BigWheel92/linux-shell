@@ -24,6 +24,7 @@ int main()
    command_vector=Tokenizer::tokenizeCommand(command);
    CommandExecuter::executeCommand(*command_vector);
    delete command_vector;
+   command_vector=nullptr;
    cout<<endl;
  }
  
