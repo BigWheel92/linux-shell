@@ -19,7 +19,7 @@ int main()
    cout<<path<<":   ";
    getline(cin, command);
    if  ( (command.length()==4 && command=="exit" ) || (command.length()>4 && command[0]=='e' && command[1]=='x' && command[2]=='i' && command[3]=='t' && command[4]==' ') )
-	   return 1;
+	   return 0;
 
    command_vector=Tokenizer::tokenizeCommand(command);
    CommandExecuter::executeCommand(*command_vector);
